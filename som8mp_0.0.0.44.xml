@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="origin" fetch="ssh://git@git.devops.rfpros.com/" />
+
+  <remote  name="github" fetch="https://github.com/" />
+
+  <remote  name="codeaurora" fetch="https://source.codeaurora.org/"/>
+
+  <remote  name="openembedded" fetch="https://git.openembedded.org/"/>
+
+  <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
+
+  <default remote="origin" revision="SUMMIT-REL-0.0.0.44" />
+
+  <project path="sources/base"
+           name="Freescale/fsl-community-bsp-base"
+           remote="github"
+           revision="5a551f453260bd19895e4d847877874eaa51fde3"
+           dest-branch="hardknott"
+           upstream="hardknott">
+
+    <linkfile src="README" dest="README"/>
+
+  </project>
+
+  <project path="sources/meta-freescale"
+           name="Freescale/meta-freescale"
+           remote="github"
+           revision="469d6c958c76ea235b3d3c1527e797ce3a7392e3"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/meta-freescale-3rdparty"
+           name="Freescale/meta-freescale-3rdparty"
+           remote="github"
+           revision="f8150f3b37cb83cba1f9e2378e57bb63e02d4610"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/meta-freescale-distro"
+           name="Freescale/meta-freescale-distro"
+           remote="github"
+           revision="e6daa26ba1f748326546063d63a085ae671827d9"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/meta-imx"
+           name="external/imx/meta-imx"
+           remote="codeaurora"
+           revision="refs/tags/rel_imx_5.10.72_2.2.0"
+           dest-branch="hardknott-5.10.72-2.2.0"
+           upstream="hardknott-5.10.72-2.2.0">
+
+    <linkfile src="README" dest="README-IMXBSP"/>
+
+  </project>
+
+  <project path="sources/meta-openembedded"
+           name="openembedded/meta-openembedded"
+           remote="github"
+           revision="f44e1a2b575826e88b8cb2725e54a7c5d29cf94a"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/meta-python2"
+           name="meta-python2"
+           remote="openembedded"
+           revision="8db9e4f6ceae33d7a4f55453d31e69f9858af4eb"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/meta-qt5"
+           name="meta-qt5/meta-qt5"
+           remote="github"
+           revision="43f8f539d40070a70fe89136db89bf5bb1dfe7ed"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/meta-timesys"
+           name="TimesysGit/meta-timesys"
+           remote="github"
+           revision="hardknott"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/poky"
+           name="poky"
+           remote="yocto"
+           revision="53587ef75ef68f14b436e1535c16aa12dab84388"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/meta-swupdate"
+           name="sbabic/meta-swupdate"
+           remote="github"
+           revision="9e1c305f09874a761f963207f6678b2d29c4fb94"
+           dest-branch="hardknott"
+           upstream="hardknott"/>
+
+  <project path="sources/meta-lrd-summitsom"
+           name="cp_yocto/meta-laird-summitsom">
+
+    <linkfile src="tools/setup-environment" dest="setup-environment"/>
+
+  </project>
+
+</manifest>
