@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="origin" fetch="ssh://git@git.devops.rfpros.com/" />
+  <remote  name="origin" fetch="ssh://git@github.com/LairdCP" />
 
   <remote  name="github" fetch="https://github.com/" />
 
@@ -11,7 +11,7 @@
 
   <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
 
-  <default remote="origin" revision="SUMMIT-REL-0.0.0.44" />
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-0.0.0.45" />
 
   <project path="sources/base"
            name="Freescale/fsl-community-bsp-base"
@@ -99,7 +99,7 @@
            upstream="hardknott"/>
 
   <project path="sources/meta-lrd-summitsom"
-           name="cp_yocto/meta-laird-summitsom">
+           name="meta-laird-summitsom.git">
 
     <linkfile src="tools/setup-environment" dest="setup-environment"/>
 
