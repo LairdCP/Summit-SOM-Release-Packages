@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="origin" fetch="https://github.com/LairdCP" />
+  <remote  name="github" fetch="https://github.com/" />
+  <remote  name="openembedded" fetch="https://git.openembedded.org/"/>
+  <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
+  <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
+  
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-2.32.0.7" />
+
+  <project path="sources/base"
+           name="Freescale/fsl-community-bsp-base"
+           remote="github"
+           revision="60f79f7af60537146298560079ae603260f0bd14"
+           dest-branch="kirkstone"
+           upstream="kirkstone">
+
+    <linkfile src="README" dest="README"/>
+
+  </project>
+
+  <project path="sources/meta-freescale"
+           name="Freescale/meta-freescale"
+           remote="github"
+           revision="c82d4634e7aba8bc0de73ce1dfc997b630051571"
+           dest-branch="kirkstone"
+           upstream="kirkstone"/>
+
+  <project path="sources/meta-freescale-3rdparty"
+           name="Freescale/meta-freescale-3rdparty"
+           remote="github"
+           revision="5977197340c7a7db17fe3e02a4e014ad997565ae"
+           dest-branch="kirkstone"
+           upstream="kirkstone"/>
+
+  <project path="sources/meta-freescale-distro"
+           name="Freescale/meta-freescale-distro"
+           remote="github"
+           revision="d5bbb487b2816dfc74984a78b67f7361ce404253"
+           dest-branch="kirkstone"
+           upstream="kirkstone"/>
+
+  <project path="sources/meta-imx"
+           name="nxp-imx/meta-imx"
+           remote="github"
+           revision="refs/tags/rel_imx_5.15.71_2.2.0"
+           dest-branch="kirkstone-5.15.71-2.2.0"
+           upstream="kirkstone-5.15.71-2.2.0">
+
+    <linkfile src="README" dest="README-IMXBSP"/>
+
+  </project>
+
+  <project path="sources/meta-openembedded"
+           name="openembedded/meta-openembedded"
+           remote="github"
+           revision="50d4a8d2a983a68383ef1ffec2c8e21adf0c1a79"
+           dest-branch="kirkstone"
+           upstream="kirkstone"/>
+
+  <project path="sources/meta-qt6"
+           name="meta-qt6"
+           remote="QT6"
+           revision="ed785a25d12e365d1054700d4fc94a053176eb14"
+           dest-branch="6.3"
+           upstream="6.3"/>
+
+  <project path="sources/meta-timesys"
+           name="TimesysGit/meta-timesys"
+           remote="github"
+           revision="kirkstone"
+           dest-branch="kirkstone"
+           upstream="kirkstone"/>
+
+  <project path="sources/poky"
+           name="poky"
+           remote="yocto"
+           revision="8a4021d2370155dce3bf193eafea4c1ee1054765"
+           dest-branch="kirkstone"
+           upstream="kirkstone"/>
+
+  <project path="sources/meta-swupdate"
+           name="sbabic/meta-swupdate"
+           remote="github"
+           revision="41aff567ad088332af5da010a22e67f30a821cf0"
+           dest-branch="kirkstone"
+           upstream="kirkstone"/>
+
+  <project path="sources/meta-summit-som"
+           name="cp_yocto/meta-summit-som">
+
+    <linkfile src="tools/setup-environment" dest="setup-environment"/>
+
+  </project>
+
+</manifest>
