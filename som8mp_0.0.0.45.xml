@@ -2,13 +2,8 @@
 <manifest>
 
   <remote  name="origin" fetch="ssh://git@github.com/LairdCP" />
-
   <remote  name="github" fetch="https://github.com/" />
-
-  <remote  name="codeaurora" fetch="https://source.codeaurora.org/"/>
-
   <remote  name="openembedded" fetch="https://git.openembedded.org/"/>
-
   <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
 
   <default remote="origin" revision="refs/tags/SUMMIT-REL-0.0.0.45" />
@@ -46,8 +41,8 @@
            upstream="hardknott"/>
 
   <project path="sources/meta-imx"
-           name="external/imx/meta-imx"
-           remote="codeaurora"
+           name="nxp-imx/meta-imx"
+           remote="github"
            revision="refs/tags/rel_imx_5.10.72_2.2.0"
            dest-branch="hardknott-5.10.72-2.2.0"
            upstream="hardknott-5.10.72-2.2.0">
@@ -98,8 +93,8 @@
            dest-branch="hardknott"
            upstream="hardknott"/>
 
-  <project path="sources/meta-lrd-summitsom"
-           name="meta-laird-summitsom.git">
+  <project path="sources/meta-summit-som"
+           name="meta-summit-som">
 
     <linkfile src="tools/setup-environment" dest="setup-environment"/>
 

@@ -88,7 +88,7 @@
            upstream="kirkstone"/>
 
   <project path="sources/meta-summit-som"
-           name="cp_yocto/meta-summit-som">
+           name="meta-summit-som">
 
     <linkfile src="tools/setup-environment" dest="setup-environment"/>
 
