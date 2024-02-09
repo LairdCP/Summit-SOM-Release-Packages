@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="origin" fetch="https://github.com/LairdCP" />
+  <remote  name="github" fetch="https://github.com/" />
+  <remote  name="openembedded" fetch="https://git.openembedded.org/"/>
+  <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
+  <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
+  
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-3.8.0.27" />
+
+  <project path="sources/base"
+           name="Freescale/fsl-community-bsp-base"
+           remote="github"
+           revision="60f79f7af60537146298560079ae603260f0bd14"
+           dest-branch="master"
+           upstream="master">
+
+    <linkfile src="README" dest="README"/>
+
+  </project>
+
+  <project path="sources/meta-freescale"
+           name="Freescale/meta-freescale"
+           remote="github"
+           revision="39d8f0d5ee44aae9932923e9fe95b7f2838563af"
+           dest-branch="master"
+           upstream="master"/>
+
+  <project path="sources/meta-freescale-3rdparty"
+           name="Freescale/meta-freescale-3rdparty"
+           remote="github"
+           revision="48cc5dd42007d09295677bc8bc0377fe96b5b270"
+           dest-branch="master"
+           upstream="master"/>
+
+  <project path="sources/meta-freescale-distro"
+           name="Freescale/meta-freescale-distro"
+           remote="github"
+           revision="a4efa17a9f6b25d8d9290dfee8275059d40b83df"
+           dest-branch="master"
+           upstream="master"/>
+
+  <project path="sources/meta-imx"
+           name="nxp-imx/meta-imx"
+           remote="github"
+           revision="refs/tags/rel_imx_6.1.22_2.0.0"
+           dest-branch="mickledore-6.1.22-2.0.0"
+           upstream="mickledore-6.1.22-2.0.0">
+
+    <linkfile src="README" dest="README-IMXBSP"/>
+
+  </project>
+
+  <project path="sources/meta-openembedded"
+           name="openembedded/meta-openembedded"
+           remote="github"
+           revision="57c516973978ca2667339bf1aae7dc722b5bcac7"
+           dest-branch="mickledore"
+           upstream="mickledore"/>
+
+  <project path="sources/meta-arm"
+           name="meta-arm"
+           remote="yocto"
+           revision="1a15a5b052d488c9f02ab8279b24003666312c96"
+           dest-branch="mickledore"
+           upstream="mickledore"/>
+
+  <project path="sources/meta-qt6"
+           name="meta-qt6"
+           remote="QT6"
+           revision="1406d0a85525a71fe5d7892d7f915404290a78ad"
+           dest-branch="6.5"
+           upstream="6.5"/>
+
+  <project path="sources/meta-timesys"
+           name="TimesysGit/meta-timesys"
+           remote="github"
+           revision="mickledore"
+           dest-branch="mickledore"
+           upstream="mickledore"/>
+
+  <project path="sources/poky"
+           name="poky"
+           remote="yocto"
+           revision="eaadbc79bb2b9a71e37b7839f6943d88920fbda4"
+           dest-branch="mickledore"
+           upstream="mickledore"/>
+
+  <project path="sources/meta-swupdate"
+           name="sbabic/meta-swupdate"
+           remote="github"
+           revision="43afaac5da07d68d97d563f69019d88334b13795"
+           dest-branch="mickledore"
+           upstream="mickledore"/>
+
+  <project path="sources/meta-java"
+           name="meta-java"
+           remote="yocto"
+           revision="6642d7842cddeb5cdd29973eb8db78f0078c1baf"
+           dest-branch="mickledore"
+           upstream="mickledore"/>
+
+  <project path="sources/meta-summit-iot"
+           name="meta-summit-iot"/>
+
+  <project path="sources/meta-summit-radio"
+           name="rfpros/cp_yocto-meta-summit-radio"
+           revision="lrd-11.92.0.x"/>
+
+  <project path="sources/meta-summit-som"
+           name="meta-summit-som">
+
+    <linkfile src="tools/setup-environment" dest="setup-environment"/>
+
+  </project>
+
+</manifest>
