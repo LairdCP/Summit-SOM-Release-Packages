@@ -7,7 +7,7 @@
   <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
   <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
 
-  <default remote="origin" revision="scarthgap-summit-5.26.0.x" />
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.26.0.19" />
 
   <project path="sources/base"
            name="Freescale/fsl-community-bsp-base"
