@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="origin" fetch="https://github.com/LairdCP" />
+  <remote  name="github" fetch="https://github.com/" />
+  <remote  name="openembedded" fetch="https://git.openembedded.org/"/>
+  <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
+  <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
+
+  <default remote="origin" revision="scarthgap-summit-5.26.0.x" />
+
+  <project path="sources/base"
+           name="Freescale/fsl-community-bsp-base"
+           remote="github"
+           revision="60f79f7af60537146298560079ae603260f0bd14"
+           dest-branch="master"
+           upstream="master">
+
+    <linkfile src="README" dest="README"/>
+
+  </project>
+
+  <project path="sources/meta-freescale"
+           name="Freescale/meta-freescale"
+           remote="github"
+           revision="14e6dfccd074dc47c2a6776cbfb2070e46d3072b"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-freescale-3rdparty"
+           name="Freescale/meta-freescale-3rdparty"
+           remote="github"
+           revision="8b61684f0b1ba8bacdf3a69d993445e9791d4932"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-freescale-distro"
+           name="Freescale/meta-freescale-distro"
+           remote="github"
+           revision="158cc55b6ee30d09957b380859dba52c0f6af68d"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-imx"
+           name="nxp-imx/meta-imx"
+           remote="github"
+           revision="refs/tags/rel_imx_6.6.23_2.0.0"
+           dest-branch="scarthgap-6.6.23_2.0.0"
+           upstream="scarthgap-6.6.23_2.0.0">
+
+    <linkfile src="README" dest="README-IMXBSP"/>
+
+  </project>
+
+  <project path="sources/meta-openembedded"
+           name="openembedded/meta-openembedded"
+           remote="github"
+           revision="1235dd4ed4a57e67683c045ad76b6a0f9e896b45"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-arm"
+           name="meta-arm"
+           remote="yocto"
+           revision="313ad2a0e600655d9bfbe53646e356372ff02644"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-qt6"
+           name="meta-qt6"
+           remote="QT6"
+           revision="dc13e1bfda4a4757a08c2d6673bc4bac012c4a80"
+           dest-branch="6.7"
+           upstream="6.7"/>
+
+  <project path="sources/meta-timesys"
+           name="TimesysGit/meta-timesys"
+           remote="github"
+           revision="scarthgap"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/poky"
+           name="poky"
+           remote="yocto"
+           revision="0b37512fb4b231cc106768e2a7328431009b3b70"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-swupdate"
+           name="sbabic/meta-swupdate"
+           remote="github"
+           revision="a924d4bfd9dd54638ac8348d3f2845339f789770"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-java"
+           name="meta-java"
+           remote="yocto"
+           revision="ac65b6e5bbd2c9b55a64a13ab4c55d212a8b585f"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-summit-iot"
+           name="meta-summit-iot"/>
+
+  <project path="sources/meta-summit-radio"
+           name="meta-summit-radio"
+           revision="lrd-12.29.0.x"/>
+
+  <project path="sources/meta-summit-som"
+           name="meta-summit-som">
+
+    <linkfile src="tools/setup-environment" dest="setup-environment"/>
+
+  </project>
+
+</manifest>
