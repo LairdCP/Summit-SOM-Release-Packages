@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="origin" fetch="ssh://git@github.com/LairdCP" />
+  <remote  name="origin" fetch="ssh://git@github.com/Ezurio" />
   <remote  name="github" fetch="https://github.com/" />
   <remote  name="openembedded" fetch="https://git.openembedded.org/"/>
   <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
